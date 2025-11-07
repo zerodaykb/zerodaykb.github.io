@@ -35,6 +35,7 @@ plugins:
   - jekyll-include-cache
 
 minimal_mistakes_skin: "dark"
+skin: "dark"
 
 # Site Author
 author:
@@ -43,15 +44,12 @@ author:
   bio: "Full time father and hacker. Sports lover."
   location: "Poland"
   links:
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://zerodaykb.pl"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://twitter.com/zerodaykb"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/zerodaykb"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://linkedin.com/in/zeroday-krzysztof-balas"
 
 # Navigation is defined in _data/navigation.yml
 
