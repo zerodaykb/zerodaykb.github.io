@@ -1,0 +1,8 @@
+main:
+  - title: "Security"
+    url: /security/
+  - title: "Personal"
+    url: /personal/
+  - title: "About"
+    url: /about/
+

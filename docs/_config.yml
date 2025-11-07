@@ -53,15 +53,7 @@ author:
       icon: "fab fa-fw fa-github"
       url: "https://github.com/zerodaykb"
 
-# Navigation
-navigation:
-  main:
-    - title: "Security"
-      url: /security/
-    - title: "Personal"
-      url: /personal/
-    - title: "About"
-      url: /about/
+# Navigation is defined in _data/navigation.yml
 
 # Sidebar
 sidebar:
