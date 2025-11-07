@@ -2,17 +2,14 @@
 layout: page
 title: About
 permalink: /about/
+author_profile: true
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Welcome to my blog! I'm just a normal guy in love with security.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+This blog covers topics related to:
+- **Security**: Cybersecurity, penetration testing, security research
+- **Personal**: Life experiences, thoughts, and updates
+- **Technology**: Development, tools, and tech insights
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
-
-
-[jekyll-organization]: https://github.com/jekyll
+Feel free to reach out via [Twitter](https://twitter.com/zerodaykb).
