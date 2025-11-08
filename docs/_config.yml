@@ -51,6 +51,9 @@ author:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://linkedin.com/in/zeroday-krzysztof-balas"
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:krzysztof@zerodaykb.pl"
 
 # Navigation is defined in _data/navigation.yml
 
