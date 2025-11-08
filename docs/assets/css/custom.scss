@@ -1,0 +1,37 @@
+---
+# Custom CSS for dark theme
+---
+
+// Ensure dark theme is applied
+body {
+  background-color: #121212 !important;
+  color: #ADB7BE !important;
+}
+
+.page__content {
+  color: #ADB7BE !important;
+}
+
+.page__title {
+  color: #ADB7BE !important;
+}
+
+// Post styling
+.post {
+  background-color: #121212 !important;
+  color: #ADB7BE !important;
+}
+
+.post__content {
+  color: #ADB7BE !important;
+}
+
+.post__title {
+  color: #ADB7BE !important;
+}
+
+// Archive styling
+.archive {
+  background-color: #121212 !important;
+  color: #ADB7BE !important;
+}
