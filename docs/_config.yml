@@ -54,6 +54,9 @@ author:
     - label: "Email"
       icon: "fas fa-fw fa-envelope"
       url: "mailto:krzysztof@zerodaykb.pl"
+    - label: "Certifications"
+      icon: "fas fa-fw fa-certificate"
+      url: "https://credentials.offsec.com/7c9f996d-1922-468a-a23e-66710228ad6a"
 
 # Navigation is defined in _data/navigation.yml
 
