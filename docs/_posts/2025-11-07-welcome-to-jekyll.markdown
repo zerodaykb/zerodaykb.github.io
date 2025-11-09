@@ -7,5 +7,4 @@ author_profile: true
 ---
 
 Website under construction.
-
-New content coming in 1 next days. Stay tuned.
+New content coming soon. Stay tuned!
