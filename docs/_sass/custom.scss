@@ -1,0 +1,58 @@
+// Custom CSS for dark theme
+
+// Ensure dark theme is applied
+body {
+  background-color: #121212 !important;
+  color: #ADB7BE !important;
+}
+
+.page__content {
+  color: #ADB7BE !important;
+}
+
+.page__title {
+  color: #ADB7BE !important;
+}
+
+// Post styling
+.post {
+  background-color: #121212 !important;
+  color: #ADB7BE !important;
+}
+
+.post__content {
+  color: #ADB7BE !important;
+}
+
+.post__title {
+  color: #ADB7BE !important;
+}
+
+// Archive styling
+.archive {
+  background-color: #121212 !important;
+  color: #ADB7BE !important;
+}
+
+// Underline active nav item in Minimal Mistakes masthead
+// Covers different selectors used by the theme for current/active links
+.masthead .greedy-nav .visible-links a.active,
+.masthead .greedy-nav .visible-links a[aria-current="page"],
+.masthead .site-nav .active > a,
+.masthead .site-nav a.active {
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+}
+
+// Also emphasize sidebar nav current item (if sidebar nav is enabled)
+.nav__list .active > a,
+.nav__list a.active,
+.nav__list a[aria-current="page"] {
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+}
+
+// Utility to hide page title when page uses `classes: no-title`
+.no-title .page__title {
+  display: none;
+}
