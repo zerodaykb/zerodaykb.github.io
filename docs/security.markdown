@@ -6,4 +6,4 @@ author_profile: true
 taxonomy: security
 ---
 
-Posts categorized under Security.
+Posts about cybersecurity, and related topics.
