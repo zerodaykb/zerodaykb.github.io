@@ -3,6 +3,7 @@ layout: single
 title: About
 permalink: /about/
 author_profile: true
+classes: no-title
 ---
 
 Welcome!
@@ -17,4 +18,4 @@ I'm OSCP+ certified and specialize in these areas:
 - mobile penetration testing
 - Active Directory penetration testing
 
-Feel free to reach me out. 
+Feel free to reach me out.
