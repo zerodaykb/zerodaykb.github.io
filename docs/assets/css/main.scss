@@ -5,18 +5,3 @@
 
 @import "minimal-mistakes/skins/dark";
 @import "minimal-mistakes";
-
-// Minimal overrides
-// Underline active nav item in Minimal Mistakes masthead
-.masthead .greedy-nav .visible-links a.active,
-.masthead .greedy-nav .visible-links a[aria-current="page"],
-.masthead .site-nav .active > a,
-.masthead .site-nav a.active {
-  text-decoration: none;
-  border-bottom: 2px solid currentColor;
-}
-
-// Hide page title when page uses `classes: no-title`
-.no-title .page__title {
-  display: none;
-}
