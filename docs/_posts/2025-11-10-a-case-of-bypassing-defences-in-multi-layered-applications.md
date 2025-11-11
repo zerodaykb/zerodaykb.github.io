@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "A case of bypassing defences in microservices application - missing input validation on higher level lead to Imagemagick RCE"
+title: "RCE in Imagemagic - a case of bypassing defences in microservices application."
 categories: [security]
 tags: [microservices, API, fuzzing]
 author_profile: true
