@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "RCE with ImageTragick - a case of bypassing defences in microservices application."
+title: "RCE with ImageTragick - a case of bypassing defences in microservices application"
 categories: [security]
 tags: [microservices, API, fuzzing]
 author_profile: true
@@ -109,7 +109,7 @@ This microservice didn't check for file type when passing the file to conversion
 By using parametr `action` with value `logo` in B2C website I was able to send Postscript file to the microservice and achieve RCE with ImageTragick.
 
 ---
-**In short**: you were able to bypass all the validations and achieve RCE with one specific parameter value. The fix needed to be implemented on B2C part and only allow "image" or "pdf" values".
+**In short**: you were able to bypass all the validations and achieve RCE with one specific parameter value. The fix needed to be implemented on B2C part and only allow "image" or "pdf" values.
 
 This shows how it is important to know your target. You could also generate a proper wordlist for the ecosystem and fuzz parameters.
 
