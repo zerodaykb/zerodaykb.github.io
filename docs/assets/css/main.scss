@@ -3,6 +3,11 @@
 
 @charset "utf-8";
 
+// Set Minimal Mistakes sizing variables BEFORE importing the theme
+// Adjust as desired
+$max-width: 1400px;    // container max width (center section)
+$content-width: 980px; // inner content width used by some layouts
+
 @import "minimal-mistakes/skins/dark";
 @import "minimal-mistakes";
 @import "custom";
