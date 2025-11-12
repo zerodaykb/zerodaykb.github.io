@@ -22,9 +22,8 @@ figure.highlight,
 div.highlighter-rouge,
 div.highlighter-rouge pre.highlight,
 pre.highlight,
-pre code,
 code {
-  background: #0b0b0b;
+  background: #1b1b1e;
   color: #eaeaea;
 }
 
@@ -33,6 +32,23 @@ figure.highlight,
 div.highlighter-rouge,
 pre.highlight {
   border: 1px solid #222;
+}
+
+// Ensure consistent padding/margins so first line isn't offset
+div.highlighter-rouge pre,
+pre.highlight {
+  margin: 0;
+  padding: 1rem;
+  text-indent: 0;
+  tab-size: 2;
+}
+
+// Avoid double padding/background on nested code element inside pre
+div.highlighter-rouge pre code,
+pre.highlight code {
+  display: block;
+  padding: 0;
+  background: transparent;
 }
 
 // Ensure inline code has some padding and rounded corners
