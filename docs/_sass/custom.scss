@@ -13,16 +13,30 @@
   display: none;
 }
 
-// Wider center content on desktop
-@media (min-width: 1200px) {
-  // Core content containers in Minimal Mistakes
-  .initial-content .page,
-  .page,
-  .page__inner-wrap,
-  .page__content,
-  .archive {
-    max-width: 1200px;
-  }
+// No side margins/padding — make main content full width
+// Target core containers used by Minimal Mistakes
+.initial-content,
+.initial-content .page,
+.page,
+.page__inner-wrap,
+.page__content,
+.archive,
+.wrap,
+.container {
+  max-width: 100% !important;
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+// Keep media responsive when going full-width
+.page__content img,
+.page__content video,
+.page__content iframe {
+  max-width: 100%;
+  height: auto;
 }
 
 // Dark background for code snippets (Rouge/Jekyll)
@@ -49,3 +63,4 @@ code {
   padding: 0.1em 0.3em;
   border-radius: 4px;
 }
+
