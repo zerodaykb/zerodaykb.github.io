@@ -13,31 +13,8 @@
   display: none;
 }
 
-// No side margins/padding — make main content full width
-// Target core containers used by Minimal Mistakes
-.initial-content,
-.initial-content .page,
-.page,
-.page__inner-wrap,
-.page__content,
-.archive,
-.wrap,
-.container {
-  max-width: 100% !important;
-  width: 100% !important;
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-}
-
-// Keep media responsive when going full-width
-.page__content img,
-.page__content video,
-.page__content iframe {
-  max-width: 100%;
-  height: auto;
-}
+// Revert full-width override to avoid overlap with sidebar.
+// Use theme variables ($max-width, $content-width) in assets/css/main.scss instead.
 
 // Dark background for code snippets (Rouge/Jekyll)
 // Covers both fenced code blocks and inline code for consistency
