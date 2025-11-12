@@ -12,3 +12,40 @@
 .no-title .page__title {
   display: none;
 }
+
+// Wider center content on desktop
+@media (min-width: 1200px) {
+  // Core content containers in Minimal Mistakes
+  .initial-content .page,
+  .page,
+  .page__inner-wrap,
+  .page__content,
+  .archive {
+    max-width: 1200px;
+  }
+}
+
+// Dark background for code snippets (Rouge/Jekyll)
+// Covers both fenced code blocks and inline code for consistency
+figure.highlight,
+div.highlighter-rouge,
+div.highlighter-rouge pre.highlight,
+pre.highlight,
+pre code,
+code {
+  background: #0b0b0b;
+  color: #eaeaea;
+}
+
+// Optional subtle border to separate from background
+figure.highlight,
+div.highlighter-rouge,
+pre.highlight {
+  border: 1px solid #222;
+}
+
+// Ensure inline code has some padding and rounded corners
+code {
+  padding: 0.1em 0.3em;
+  border-radius: 4px;
+}
