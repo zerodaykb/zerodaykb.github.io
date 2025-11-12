@@ -25,7 +25,7 @@ Both of uploads were hitting same microservice for converting files with Imagema
 
 You could specify attachment_type parameter value as "image"...
 
-```html
+```http
 POST /upload_attachment HTTP/1.1
 Host: target.com
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryvbOSgVpRh3Ra6iZT
@@ -46,7 +46,7 @@ Content-Type: image/png
 
 ... or as pdf:
 
-```html
+```http
 POST /upload_attachment HTTP/1.1
 Host: target.com
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryvbOSgVpRh3Ra6iZT
@@ -75,7 +75,7 @@ Note that:
 
 There was only option to upload company logo:
 
-```html
+```http
 POST /upload_logo HTTP/1.1
 Host: b2b.target.com
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryvbOSgVpRh3Ra6iZT
@@ -96,7 +96,7 @@ Content-type and magic bytes were correctly validated again.
 
 Both endpoint were hitting same microservice which code looked like this:
 
-```html
+```python
 valid = {"image", "pdf", "logo"}
 
 if action in valid:
