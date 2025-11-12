@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "RCE in ImageTragick - a case of bypassing defences in microservices application."
+title: "RCE with ImageTragick - a case of bypassing defences in microservices application."
 categories: [security]
 tags: [microservices, API, fuzzing]
 author_profile: true
@@ -23,9 +23,9 @@ Both of uploads were hitting same microservice for converting files with Imagema
 ---
 ### B2B part:
 
-You could specify attachment_type parameter value as "image" or "pdf":
+You could specify attachment_type parameter value as "image"...
 
-```
+```html
 POST /upload_attachment HTTP/1.1
 Host: target.com
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryvbOSgVpRh3Ra6iZT
@@ -44,7 +44,9 @@ Content-Type: image/png
 ------WebKitFormBoundaryvbOSgVpRh3Ra6iZT--
 ```
 
-```
+... or as pdf:
+
+```html
 POST /upload_attachment HTTP/1.1
 Host: target.com
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryvbOSgVpRh3Ra6iZT
@@ -65,15 +67,15 @@ Content-Type: application/pdf
 
 
 Note that:
-- When you tried to specify different parameter you received 500 error.
-- Content-type and magic bytes were correctly validated for both types.
+- when you tried to specify different parameter value you received 500 error
+- content-type and magic bytes were correctly validated in both types
 
 ---
 ### B2C part:
 
 There was only option to upload company logo:
 
-```
+```html
 POST /upload_logo HTTP/1.1
 Host: b2b.target.com
 Content-Type: multipart/form-data; boundary=----WebKitFormBoundaryvbOSgVpRh3Ra6iZT
@@ -94,7 +96,7 @@ Content-type and magic bytes were correctly validated again.
 
 Both endpoint were hitting same microservice which code looked like this:
 
-```
+```html
 valid = {"image", "pdf", "logo"}
 
 if action in valid:
@@ -108,9 +110,10 @@ This microservice didn't check for file type when passing the file to conversion
 
 By using parametr `action` with value `logo` in B2C website I was able to send Postscript file to the microservice and achieve RCE with ImageTragick.
 
-**So in short**: you were able to bypass all the validations and achieve RCE with exactly and only one specificparameter value.
+---
+**In short**: you were able to bypass all the validations and achieve RCE with one specific parameter value. The fix needed to be implemented on B2C part and only allow "image" or "pdf" values".
 
-This shows how it is important to know your target. You could also generate a proper wordlist for the ecosystem and fuzz parameters but which is easier approach?
+This shows how it is important to know your target. You could also generate a proper wordlist for the ecosystem and fuzz parameters.
 
 ## Takeaways
 - find which functionalities might be hitting same microservice
