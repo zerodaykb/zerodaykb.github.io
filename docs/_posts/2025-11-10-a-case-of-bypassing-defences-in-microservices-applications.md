@@ -5,7 +5,6 @@ categories: [security]
 tags: [microservices, API, fuzzing]
 author_profile: true
 ---
-## TLDR
 
 I was able to bypass file-type validation by using allowed parameter value from another part of the ecosystem and achieve RCE.
 
@@ -22,7 +21,7 @@ Both of uploads were hitting same microservice for converting files with Imagema
 ---
 ### B2B part:
 
-You could specify attachment_type parameter value as "image"...
+You could specify attachment_type parameter value as "image":
 
 ```http
 POST /upload_attachment HTTP/1.1
