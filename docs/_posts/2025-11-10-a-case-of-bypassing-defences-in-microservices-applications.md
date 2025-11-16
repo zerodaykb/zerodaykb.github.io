@@ -106,7 +106,7 @@ else:
 This microservice didn't check for file type when passing the file to conversion with ImageMagick.
 
 
-By using parametr `action` with value `logo` in B2C website I was able to send Postscript file to the microservice and achieve RCE with ImageTragick.
+By setting the `attachment_type` parameter to `logo` in the B2C website, I was able to upload a PostScript file to the image-processing microservice and achieve RCE via ImageTragick.
 
 ---
 **In short**: you were able to bypass all the validations and achieve RCE with one specific parameter value. The fix needed to be implemented on B2C part and only allow "image" or "pdf" values.
