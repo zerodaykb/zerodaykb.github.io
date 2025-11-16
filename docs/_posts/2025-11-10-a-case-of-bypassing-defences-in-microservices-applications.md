@@ -92,7 +92,7 @@ Content-type and magic bytes were correctly validated again.
 
 ## The bug
 
-Both endpoint were hitting same microservice which code looked like this:
+Both endpoint were hitting same microservice which code looked like this (pseudo code):
 
 ```python
 valid = {"image", "pdf", "logo"}
