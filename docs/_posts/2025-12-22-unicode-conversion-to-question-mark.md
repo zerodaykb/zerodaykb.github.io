@@ -6,7 +6,7 @@ tags: [unicode, utf, normalization]
 author_profile: true
 ---
 
-Check out my blog post at:
+Check out my blog post at:\
 [https://lab.ctbb.show/research/unicode-surrogates-to-replacement-characters](https://lab.ctbb.show/research/unicode-surrogates-to-replacement-characters)
 
 
