@@ -1,0 +1,12 @@
+---
+layout: single
+title: "Unicode conversion to replacement characters [EXTERNAL LINK]
+categories: [security]
+tags: [unicode, utf, conversion]
+author_profile: true
+---
+
+Check out my blog at:
+https://lab.ctbb.show/research/unicode-surrogates-to-replacement-characters
+
+... and remember to join the Critical Thinking community!
