@@ -1,8 +1,8 @@
 ---
 layout: single
-title: "Unicode conversion to replacement characters [EXTERNAL LINK]
+title: "Unicode conversion to replacement characters [EXTERNAL LINK]"
 categories: [security]
-tags: [unicode, utf, conversion]
+tags: [unicode, utf, normalization]
 author_profile: true
 ---
 
